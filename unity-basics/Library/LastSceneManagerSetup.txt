@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/tuukka.unity
-  isLoaded: 1
-  isActive: 1
