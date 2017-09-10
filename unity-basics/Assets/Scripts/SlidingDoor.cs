@@ -15,10 +15,15 @@ public class SlidingDoor : MonoBehaviour {
 
     public void Open() {
         open = true;
+        CancelInvoke(); // in case door is scheduled to close, cancel that
     }
 
     public void Close() {
         open = false;
+    }
+
+    public void DelayedClose(float seconds) {
+        Invoke("Close", seconds);
     }
 
     void Awake() {
