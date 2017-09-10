@@ -194,8 +194,7 @@ public class GvrControllerInput : MonoBehaviour {
 
   /// If true, the user is currently touching the controller's touchpad.
   public static bool IsTouching {
-    get {
-      return instance != null ? instance.controllerState.isTouching : false;
+    get {      return instance != null ? instance.controllerState.isTouching : false;
     }
   }
 
